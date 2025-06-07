@@ -1,0 +1,19 @@
+.menu {
+    height: 40px;
+    padding: 8px 16px;
+    background-color: #222;
+    display: flex;
+    gap: 16px;
+    img {
+        height: 100%;
+    }
+}
+
+.menuItem {
+    padding: 4px 8px;
+    background-color: #444;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

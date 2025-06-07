@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto} from "next/font/google";
 import "./globals.css";
+import Menu from "@/components/Menu";
 
 const roboto = Roboto({
     variable: "--font",
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={roboto.variable}>
-      <header></header>
+        <Menu/>
         {children}
       </body>
     </html>
