@@ -17,10 +17,15 @@
 *   -Контакты
 * */
 
+import Page from "@/components/Page";
+
 export default function Home() {
   return (
     <div>
         <h1>hello NextJS</h1>
+        <Page>
+            <>Hello!</>
+        </Page>
     </div>
   );
 }
