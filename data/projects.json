@@ -1,0 +1,17 @@
+{
+  "name": "Атаман",
+  "area": 108,
+  "sizes": {
+    "l": 9,
+    "w": 7
+  },
+  "rooms": 5,
+  "floors": 1,
+  "time": 16,
+  "type": "Каркасный",
+  "cost": 1780000,
+  "hasZeroFloor": false,
+  "hasGarage": false,
+  "hasAttic": true,
+  "hasPanoramicWindows": true
+}

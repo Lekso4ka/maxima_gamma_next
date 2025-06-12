@@ -1,5 +1,7 @@
+import ProjectsGrid from "@/components/ProjectsGrid";
+
 export default function ProjectsPage () {
     return <>
-        <h1>Наши проекты</h1>
+        <ProjectsGrid/>
     </>
 }
