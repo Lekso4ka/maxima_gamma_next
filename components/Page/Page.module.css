@@ -3,12 +3,9 @@
     grid-template-columns: 200px 1fr;
     gap: 20px;
     padding: 20px;
-    h1 {
-        grid-column-end: span 2;
-        text-align: center;
-        /*background-color: #222;*/
-    }
-    nav {
-        background-color: #383838;
-    }
+}
+
+.page h1 {
+    grid-column-end: span 2;
+    text-align: center;
 }

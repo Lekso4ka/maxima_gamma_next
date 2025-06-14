@@ -4,11 +4,8 @@ import type {Project} from "./types"
 import Card from "./Card";
 import data from "@/data/projects.json"
 
-const projects: Project[] = []
+const projects: Project[] = data
 
-for (let i = 0; i < 6; i++) {
-    projects.push(data)
-}
 export default function ProjectsGrid ({}) {
     return <Layout>
         <Layout.Header>

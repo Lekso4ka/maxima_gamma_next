@@ -18,14 +18,14 @@
 * */
 
 import Page from "@/components/Page";
+import Adds from "@/components/Adds";
 
 export default function Home() {
   return (
     <div>
-        <h1>hello NextJS</h1>
-        <Page>
-            <>Hello!</>
-        </Page>
+        {/*<Page>*/}
+            <Adds/>
+        {/*</Page>*/}
     </div>
   );
 }

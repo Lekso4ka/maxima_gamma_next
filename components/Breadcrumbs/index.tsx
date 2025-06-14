@@ -12,6 +12,7 @@ export const linkNames = {
     "": "Главная"
 }
 
+import projects from "@/data/projects.json";
 
 import { usePathname } from 'next/navigation'
 
@@ -22,11 +23,13 @@ export default function BreadCrumbs() {
     useEffect(() => {
         if (path) {
             setLinks(path.split("/").map((el) => {
+                const proName = projects.filter(pr => pr.id === el)[0];
+                console.log(proName?.name);
                 const p = `/${el}`
                 const start = path.indexOf(p), finish = p.length;
                 const pth = path.slice(0, start + finish);
                 const obj = {
-                    title: linkNames[el]
+                    title: linkNames[el] || proName?.name || el
                 }
                 if (pth !== path) {
                     obj.href = pth

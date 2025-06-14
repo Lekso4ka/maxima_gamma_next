@@ -1,11 +1,14 @@
 "use client"
 import type {Project} from "./types";
 import {Card as Cd, Typography, Row, Col, Flex, Button} from 'antd';
+import Link from "next/link"
+
 
 const { Title, Text } = Typography;
 
 export default function Card({
     name,
+    id,
     area,
     sizes,
     rooms,
@@ -57,6 +60,8 @@ export default function Card({
                 <Text>руб.</Text>
             </Flex>
         </Flex>
-        <Button color="gold" variant="solid">Подробнее</Button>
+        <Link href={`/projects/${id}`}>
+            <Button color="gold" variant="link">Подробнее</Button>
+        </Link>
     </Cd>
 }
