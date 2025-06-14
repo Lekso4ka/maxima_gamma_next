@@ -6,7 +6,7 @@
     h1 {
         grid-column-end: span 2;
         text-align: center;
-        background-color: #222;
+        /*background-color: #222;*/
     }
     nav {
         background-color: #383838;
