@@ -16,9 +16,6 @@ export default function Card({
     type,
     cost
 }: Project) {
-
-    const b = 6;
-
     return <Cd
         style={{margin: "16px 0"}}
         hoverable
@@ -64,7 +61,7 @@ export default function Card({
             </Flex>
         </Flex>
         <Link href={`/projects/${id}`}>
-            <Button color="gold" variant="link">Подробнее</Button>
+            <Button variant="solid">Подробнее</Button>
         </Link>
     </Cd>
 }

@@ -22,7 +22,7 @@ export default function BreadCrumbs() {
     const path = usePathname();
     const [links, setLinks]= useState([])
 
-    const {user} = useCtx()
+    // const {user} = useCtx()
 
     useEffect(() => {
         if (path) {
@@ -43,7 +43,7 @@ export default function BreadCrumbs() {
         }
     }, [path])
     return <>
-        {user}
+        {/* {user} */}
         <Breadcrumb items={links}/>
     </>
 }
