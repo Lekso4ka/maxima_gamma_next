@@ -1,5 +1,7 @@
 'use client'
 
+import { useCtx } from "@/ctx";
+
 import {useState, useEffect} from "react"
 import { Breadcrumb } from 'antd';
 
@@ -20,6 +22,8 @@ export default function BreadCrumbs() {
     const path = usePathname();
     const [links, setLinks]= useState([])
 
+    const {user} = useCtx()
+
     useEffect(() => {
         if (path) {
             setLinks(path.split("/").map((el) => {
@@ -38,5 +42,8 @@ export default function BreadCrumbs() {
             }))
         }
     }, [path])
-    return <Breadcrumb items={links}/>
+    return <>
+        {user}
+        <Breadcrumb items={links}/>
+    </>
 }
